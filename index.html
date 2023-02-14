@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Portfolio</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="container">
+      <nav>
+        <!-- logo -->
+        <div class="nav-brand">
+          <a href="#home"><p>jPopuli</p></a>
+        </div>
+        <!-- burger menu -->
+        <div class="nav-menu open" id="toggle-open">
+          <i class="fa fa-bars"></i>
+        </div>
+        <!-- nav links / hidden -->
+        <ul class="nav-links" id="nav-bar">
+          <!-- close button -->
+          <div class="nav-menu close" id="toggle-close">
+            <i class="fa fa-times"></i>
+          </div>
+          <!-- link 1 -->
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <!-- link 2 -->
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <!-- link 3 -->
+          <li class="nav-item">
+            <a href="#project" class="nav-link">Project</a>
+          </li>
+          <!-- link 4 -->
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- HOMEPAGE -->
+    <div class="container homepage" id="home">
+      <div class="homepage-content">
+        <h1>Hello, I am <span>Jerome Nel</span></h1>
+        <p>Student / Aspiring Web Developer</p>
+        <div class="home-btn">
+          <button onclick="location.href='#about'" type="button">
+            More Info
+          </button>
+          <button onclick="location.href='#project'" type="button">
+            See Projects
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div class="container about-page" id="about">
+      <div class="about-title">
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <!-- flex container / about me info -->
+      <div class="about-content">
+        <div class="about-img">
+          <img src="./img/profile.jpg" alt="Profile" />
+        </div>
+        <div class="about-text">
+          <p>
+            I am Jerome Nel L. Populi, but you can call me Nel. I am a 4th-year
+            college student of Bachelor of Science in Information Technology in
+            Central Luzon State University.
+          </p>
+          <p>
+            I am an aspiring full-stack web developer. I have an experience in
+            front-end programming and a little experience in back-end
+            programming.
+          </p>
+          <p>
+            I enjoy building the front-end part of the websites and web
+            applications.
+          </p>
+        </div>
+      </div>
+      <!-- educational background -->
+      <div class="info-wrapper">
+        <div class="title">
+          <i class="fas fa-school"></i>
+          <h2>Education</h2>
+        </div>
+        <div class="school-list">
+          <div class="school no-space">
+            <h3>Central Luzon State University</h3>
+            <p class="year">
+              <i class="far fa-calendar-alt"></i>2018 - present
+            </p>
+            <p>BS in Information Technology</p>
+          </div>
+          <div class="school">
+            <h3>Munoz National High School</h3>
+            <p class="year"><i class="far fa-calendar-alt"></i>2016 - 2018</p>
+            <p>Senior High School - STEM Strand</p>
+          </div>
+          <div class="school">
+            <h3>San Antonio Integrated School</h3>
+            <p class="year"><i class="far fa-calendar-alt"></i>2012 - 2016</p>
+            <p>Junior High School</p>
+          </div>
+        </div>
+      </div>
+      <!-- skills section -->
+      <div class="info-wrapper">
+        <div class="title">
+          <i class="fas fa-laptop-code"></i>
+          <h2>My Skills</h2>
+        </div>
+        <div class="skill-wrapper">
+          <div class="skill">
+            <img src="img/icons/html-5.png" alt="" />
+            <p>HTML</p>
+          </div>
+          <div class="skill">
+            <img src="img/icons/css-3.png" alt="" />
+            <p>CSS</p>
+          </div>
+          <div class="skill">
+            <img src="img/icons/js.png" alt="" />
+            <p>JavaScript</p>
+          </div>
+          <div class="skill">
+            <img src="img/icons/php.png" alt="" />
+            <p>PHP</p>
+          </div>
+          <div class="skill">
+            <img src="img/icons/mysql.png" alt="" />
+            <p>MySQL</p>
+          </div>
+          <div class="skill">
+            <img src="img/icons/git.png" alt="" />
+            <p>Version Control</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PROJECT SECTION -->
+    <div class="container project-page" id="project">
+      <div class="about-title">
+        <h2 class="section-title">My Projects</h2>
+      </div>
+      <!-- project container / flex -->
+      <div class="project-wrapper">
+        <!-- project 1 -->
+        <div class="project-item">
+          <img src="./img/projects/order-summary-card.png" alt="" />
+          <div class="project-body">
+            <h3>Order Summary Component</h3>
+            <p>HTML / CSS</p>
+            <p>
+              This is a solution to the "Order Summary Card Challenge" on
+              Frontend Mentor. Frontend Mentor challenges help you improve your
+              coding skills by building realistic projects.
+            </p>
+            <div class="project-buttons">
+              <a
+                href="https://jerome-nel.github.io/order-summary-component/"
+                target="_blank"
+                >Preview</a
+              >
+              <a
+                href="https://github.com/Jerome-Nel/order-summary-component.git"
+                target="_blank"
+                >View Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- project 2 -->
+        <div class="project-item">
+          <img src="./img/projects/clone-website.PNG" alt="" />
+          <div class="project-body">
+            <h3>Website Clone</h3>
+            <p>HTML / CSS / Responsive Design</p>
+            <p>
+              This is a solution to the "Web Developer Clone Challenge" on
+              Frontend Mentor. Frontend Mentor challenges help you improve your
+              coding skills by building realistic projects.
+            </p>
+            <div class="project-buttons">
+              <a
+                href="https://jerome-nel.github.io/codewell-challenge.github.io/"
+                target="_blank"
+                >Preview</a
+              >
+              <a
+                href="https://github.com/Jerome-Nel/codewell-challenge.github.io.git"
+                target="_blank"
+                >View Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- project 3 -->
+        <div class="project-item">
+          <img src="./img/projects/crud.PNG" alt="" />
+          <div class="project-body">
+            <h3>Basic CRUD</h3>
+            <p>PHP / CSS / SCSS</p>
+            <p>
+              A simple web application that can Create, Read, Update, Delete
+              (CRUD) data.
+            </p>
+            <div class="project-buttons">
+              <a
+                href="https://github.com/Jerome-Nel/basic-crud.git"
+                target="_blank"
+                >View Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <div class="container contact-page" id="contact">
+      <div class="about-title">
+        <h2 class="section-title contact-title">Contact Me</h2>
+        <p>
+          Let's work together on a project. I am always open to discussing new
+          projects and creative ideas.
+        </p>
+      </div>
+      <form action="">
+        <div class="form-group">
+          <input type="text" placeholder="Username" />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Email" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Say something for me ..."
+        ></textarea>
+        <input type="button" value="Send" class="btn" />
+      </form>
+    </div>
+
+    <!-- footer section -->
+    <footer>
+      <div class="footer-top">
+        <!-- logo -->
+        <div class="nav-brand">
+          <p>jPopuli</p>
+        </div>
+        <div class="contact-grid">
+          <!-- contact info -->
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <p>09955945857</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Munoz, Nueva Ecija</p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <p>populi.jerome@clsu2.edu.ph</p>
+            </div>
+          </div>
+          <!-- social media -->
+          <div class="social-media-wrapper">
+            <p class="txt">Social Media</p>
+            <div class="social-media">
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-github-square"></i>
+              <i class="fab fa-twitter-square"></i>
+              <i class="fab fa-youtube-square"></i>
+            </div>
+          </div>
+          <div class="credits">
+            Icons made by
+            <a href="https://www.freepik.com" target="_blank" title="Freepik"
+              >Freepik </a
+            >from
+            <a href="https://www.flaticon.com/" target="_blank" title="Flaticon"
+              >www.flaticon.com</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="footer-bot">
+        <p>&copy;2023 Jerome Nel Populi Web Portfolio</p>
+      </div>
+    </footer>
+
+    <!-- Fontawesome kit -->
+    <script
+      src="https://kit.fontawesome.com/c8c47f29f6.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
