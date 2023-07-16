@@ -1,25 +1,23 @@
-const selectElement = (s) => document.querySelector(s);
-const selectElementAll = (s) => document.querySelectorAll(s);
+(function () {
+	emailjs.init('1g3Q8LMTqmiO-J8-y');
+})();
 
-const toggleOpen = selectElement("#toggle-open");
-const toggleClose = selectElement("#toggle-close");
-const navBar = selectElement("#nav-bar");
-const links = selectElementAll(".nav-link");
-const container = selectElementAll(".container");
+window.onload = function () {
+	document.getElementById('contact-form').addEventListener('submit', function (event) {
+		event.preventDefault();
 
-// toggle open when click
-toggleOpen.addEventListener("click", () => {
-    navBar.style.width = "250px";
-});
-
-// toggle close when click
-toggleClose.addEventListener("click", () => {
-    navBar.style.width = "0";
-});
-
-// close side bar after clicking any links
-// links.forEach((link) => {
-//     link.addEventListener("click", () => {
-//         navBar.style.width = "0";
-//     });
-// });
+		// these IDs from the previous steps
+		emailjs.sendForm('service_zo3eemc', 'template_gi5ijop', this).then(
+			function () {
+				document.getElementById('contact-form').reset();
+				// Show the success modal
+				let successModal = document.getElementById('success-modal');
+				let bootstrapModal = new bootstrap.Modal(successModal);
+				bootstrapModal.show();
+			},
+			function (error) {
+				console.log('FAILED...', error);
+			}
+		);
+	});
+};
