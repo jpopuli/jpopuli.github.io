@@ -126,8 +126,8 @@ h2 {
 	}
 
 	.profile-img {
-		height: 240px;
-		width: 240px;
+		height: 280px;
+		width: 280px;
 	}
 
 	.about-desc {
@@ -143,7 +143,6 @@ h2 {
 /* ==================================== */
 /* contact page */
 .contact-page {
-	/* background-image: url('../img/wave_bottom.svg'); */
 	background-repeat: no-repeat;
 	background-position: bottom;
 	padding-bottom: 2rem;
@@ -255,6 +254,7 @@ footer {
 /* social media icons */
 .media i {
 	font-size: 2rem;
+	color: #fff;
 }
 
 .txt {
@@ -436,22 +436,6 @@ footer {
 		transition: 500ms;
 		z-index: 3;
 		font-size: 1rem;
-	}
-
-	/* modal styles */
-	.modal-content {
-		width: 60%;
-	}
-
-	.modal-body {
-		padding: 0.5rem;
-		height: auto;
-	}
-
-	.close-modal {
-		font-size: 2rem;
-		right: 0;
-		top: -15%;
 	}
 
 	/* contact */
