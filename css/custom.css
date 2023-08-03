@@ -12,14 +12,13 @@ body {
 	color: var(--light-text);
 }
 
+button {
+	font-family: 'Poppins', sans-serif;
+}
+
 img {
 	height: 100%;
 	width: 100%;
-	object-fit: cover;
-}
-
-button {
-	font-family: 'Poppins', sans-serif;
 }
 
 input,
@@ -151,18 +150,34 @@ section.contact {
 }
 
 .about .profile {
-	height: 210px;
-	width: 210px;
-	border: 4px solid var(--accent-color);
+	all: unset;
+	position: relative;
+	margin-top: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.about .img-1 {
+	height: 180px;
+	width: 180px;
 	border-radius: 50%;
-	overflow: hidden;
+}
+
+.about .img-2 {
+	height: 320px;
+	width: 320px;
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.about .profile img {
+	object-fit: cover;
 }
 
 .text-justify {
-	text-indent: 1rem;
-	hyphens: auto;
 	text-align: justify;
-	word-spacing: -0.5px;
 }
 
 .skills .row {
@@ -194,6 +209,11 @@ section.contact {
 
 .projects .card .card-img {
 	height: 170px;
+}
+
+.projects .card .card-img img {
+	min-width: 100%;
+	min-height: 100%;
 }
 
 .projects .card .tech-stacks {
@@ -303,8 +323,19 @@ section.contact {
 	}
 
 	.about .profile {
-		height: 300px;
-		width: 300px;
+		margin: 0;
+	}
+
+	.about .img-1 {
+		height: 210px;
+		width: 210px;
+		margin-top: -2rem;
+	}
+
+	.about .img-2 {
+		height: 390px;
+		width: 390px;
+		top: 40%;
 	}
 
 	.skills .row {
@@ -385,5 +416,9 @@ section.contact {
 
 	.projects .card .tech-stacks {
 		height: 50px;
+	}
+
+	.projects .card .card-img {
+		height: 200px;
 	}
 }
