@@ -135,20 +135,19 @@ section.contact {
 }
 
 .btn-primary {
-	color: var(--dark-bg);
-	background-color: var(--accent-color);
-	border-color: var(--accent-color);
+	color: var(--light-text);
+	background-color: #0085b6;
+	border-color: #0085b6;
 }
 
 .btn-primary:hover {
-	background-color: #0085b6;
+	background-color: #005f83;
 }
 
 .btn-secondary {
 	background-color: transparent;
-	border-color: var(--accent-color);
-	color: var(--accent-color);
-	font-family: 'Poppins', sans-serif;
+	border-color: #0085b6;
+	color: #0085b6;
 }
 
 .about .profile {
