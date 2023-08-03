@@ -4,21 +4,23 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Web Portfolio</title>
+		<title>Jerome's Portfolio</title>
 
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="css/custom.css" />
 	</head>
 	<body>
 		<!-- NAVBAR -->
-		<nav class="navbar navbar-expand-lg sticky-top bg-light shadow-sm">
+		<nav class="navbar navbar-expand-lg fixed-top bg-dark shadow-sm">
 			<div class="container">
-				<a class="navbar-brand" href="#">jPopuli</a>
+				<span class="navbar-brand">jPopuli</span>
 
 				<button
 					class="navbar-toggler"
@@ -29,22 +31,22 @@
 					aria-expanded="false"
 					aria-label="Toggle navigation"
 				>
-					<span class="navbar-toggler-icon"></span>
+					<i class="fa-solid fa-bars"></i>
 				</button>
 
-				<div class="collapse navbar-collapse" id="navbarNav">
+				<div class="collapse navbar-collapse mt-2 mt-md-0" id="navbarNav">
 					<ul class="navbar-nav ms-auto">
 						<li class="nav-item">
-							<a class="nav-link" href="#home">Home</a>
+							<a class="nav-link ps-3 ps-md-0" href="#home">Home</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#about">About Me</a>
+							<a class="nav-link ps-3 ps-md-0" href="#about">About Me</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#project">Projects</a>
+							<a class="nav-link ps-3 ps-md-0" href="#project">Projects</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#contact">Contact</a>
+							<a class="nav-link ps-3 ps-md-0" href="#contact">Contact</a>
 						</li>
 					</ul>
 				</div>
@@ -52,122 +54,136 @@
 		</nav>
 
 		<!-- HERO -->
-		<section id="home" class="container-fluid d-flex justify-content-center align-items-center hero-section">
-			<div class="container hero-content text-center">
-				<h1 class="display-1">Hello, I am <span class="fw-bold accent">Jerome Nel</span></h1>
-				<p class="fs-4 fst-italic">Web Developer</p>
-				<div class="d-flex justify-content-center mt-5">
-					<a href="#about" class="btn btn-sm btn-secondary me-1">About Me</a>
-					<a href="#project" class="btn btn-sm btn-primary bg-accent">View Projects</a>
+		<section class="hero container-fluid d-flex justify-content-center align-items-center" id="home">
+			<div class="content d-flex flex-column flex-md-row-reverse align-items-center justify-content-md-between" data-aos="zoom-in">
+				<div class="hero-icon">
+					<img src="img/assets/blob-1.png" alt="" class="blob" />
+					<img src="img/assets/developer.png" alt="" />
+				</div>
+				<div class="text-center text-md-start">
+					<h1>Hello, I am <span class="fw-bold accent d-block">Jerome Nel</span></h1>
+					<p class="fs-5 fst-italic">Web Developer</p>
+					<div class="d-flex justify-content-center justify-content-md-start mt-5">
+						<a href="#about" class="btn btn-sm btn-secondary me-1">About Me</a>
+						<a href="#project" class="btn btn-sm btn-primary">View Projects</a>
+					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- PROFILE SECTION -->
-		<section class="container py-4 about-section" id="about">
-			<h2 class="text-center mt-4 fs-2"><span class="primary">About</span> Me</h2>
-			<div class="about-wrap">
-				<div class="profile-img">
-					<img class="img-fluid" src="img/profile_latest.jpg" class="img-fluid" alt="Profile" />
+		<section class="about container" id="about">
+			<h2 class="text-center mb-4" data-aos="fade-up"><span class="accent">About</span> Me</h2>
+			<div class="row" data-aos="fade-up">
+				<div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+					<div class="profile mt-md-0">
+						<img src="img/assets/profile.jpg" alt="profile" />
+					</div>
 				</div>
-				<div class="about-desc">
-					<p>
-						My name is <span>Jerome Nel L. Populi</span>, but you can call me <span>Jerome</span>. I am a highly motivated and enthusiastic individual who
-						recently graduated with a Bachelor of Science in Information Technology from
-						<a href="https://clsu.edu.ph/" target="_blank" class="text-decoration-none">Central Luzon State University</a>.
+				<div class="col-12 col-md-6 mt-4 mt-md-0">
+					<p class="text-justify">
+						My name is <em>Jerome Nel L. Populi</em>, but you can call me <span class="accent">Jerome</span>. I am a highly motivated and enthusiastic
+						individual who recently graduated with a Bachelor of Science in Information Technology from
+						<a href="https://clsu.edu.ph/" target="_blank" class="text-decoration-none accent">Central Luzon State University</a>.
 					</p>
 
-					<p>
-						As a web developer, I am eager to learn and adapt to new technologies. I believe in staying up-to-date with the latest trends and best practices in
-						the industry to become a versatile and well-rounded developer. With a strong work ethic and a dedication to continuous learning, I am well-prepared
-						to make valuable contributions to the success of any organization.
+					<p class="text-justify">
+						As a web developer, I'm eager to learn and adapt to new technologies. I stay up-to-date with industry trends and best practices to be a versatile
+						and well-rounded developer. With a strong work ethic and dedication to continuous learning, I'm prepared to make valuable contributions to any
+						organization's success.
 						<br />
-						<a href="Jerome_Populi_resume.pdf" class="btn btn-sm btn-primary mt-3" target="_blank" download>Download CV</a>
+						<button href="Jerome_Populi_resume.pdf" class="btn btn-sm btn-primary mt-3" target="_blank" download>Download CV</button>
 					</p>
 				</div>
 			</div>
 		</section>
 
 		<!-- SKILLS SECTION -->
-		<section class="container py-2 educ-section">
-			<div class="info-wrapper">
-				<h2 class="text-center mt-4 fs-2">My <span class="primary">Skills</span></h2>
-				<div class="skill-list">
-					<div class="skill">
-						<div class="skill-icon">
-							<img class="img-fluid" src="img/icons/html-5.png" alt="HTML" />
-						</div>
-						<p>HTML</p>
+		<section class="skills container">
+			<h2 class="text-center mb-4" data-aos="fade-up">My <span class="accent">Skills</span></h2>
+			<div class="row">
+				<div class="p-2" data-aos="zoom-in">
+					<div class="icon">
+						<img src="img/icons/html-5.png" alt="HTML" class="img-fluid" />
 					</div>
-					<div class="skill">
-						<div class="skill-icon">
-							<img class="img-fluid" src="img/icons/css-3.png" alt="CSS" />
-						</div>
-						<p>CSS</p>
+					<p class="text-center mt-2">HTML</p>
+				</div>
+				<div class="p-2" data-aos="zoom-in">
+					<div class="icon">
+						<img src="img/icons/css-3.png" alt="CSS" class="img-fluid" />
 					</div>
-					<div class="skill">
-						<div class="skill-icon">
-							<img class="img-fluid" src="img/icons/js.png" alt="JAVASCRIPT" />
-						</div>
-						<p>Javascript</p>
+					<p class="text-center mt-2">CSS</p>
+				</div>
+				<div class="p-2" data-aos="zoom-in">
+					<div class="icon">
+						<img src="img/icons/js.png" alt="JS" class="img-fluid" />
 					</div>
-					<div class="skill">
-						<div class="skill-icon">
-							<img class="img-fluid" src="img/icons/bootstrap.png" alt="BOOTSTRAP" />
-						</div>
-						<p>Bootstrap</p>
+					<p class="text-center mt-2">Javascript</p>
+				</div>
+				<div class="p-2" data-aos="zoom-in">
+					<div class="icon">
+						<img src="img/icons/sass.png" alt="Sass" class="img-fluid" />
 					</div>
-					<div class="skill">
-						<div class="skill-icon">
-							<img class="img-fluid" src="img/icons/jquery.png" alt="JQUERY" />
-						</div>
-						<p>jQuery</p>
+					<p class="text-center mt-2">Sass</p>
+				</div>
+				<div class="p-2" data-aos="zoom-in">
+					<div class="icon">
+						<img src="img/icons/bootstrap.png" alt="Bootstrap" class="img-fluid" />
 					</div>
-					<div class="skill">
-						<div class="skill-icon">
-							<img class="img-fluid" src="img/icons/php.png" alt="PHP" />
-						</div>
-						<p>PHP</p>
+					<p class="text-center mt-2">Bootstrap</p>
+				</div>
+				<div class="p-2" data-aos="zoom-in">
+					<div class="icon">
+						<img src="img/icons/jquery.png" alt="jQuery" class="img-fluid" />
 					</div>
-					<div class="skill">
-						<div class="skill-icon">
-							<img class="img-fluid" src="img/icons/mysql.png" alt="MySQL" />
-						</div>
-						<p>MySQL</p>
+					<p class="text-center mt-2">jQuery</p>
+				</div>
+				<div class="p-2" data-aos="zoom-in">
+					<div class="icon">
+						<img src="img/icons/php.png" alt="PHP" class="img-fluid" />
 					</div>
-					<div class="skill">
-						<div class="skill-icon">
-							<img class="img-fluid" src="img/icons/git.png" alt="GIT" />
-						</div>
-						<p>Git</p>
+					<p class="text-center mt-2">PHP</p>
+				</div>
+				<div class="p-2" data-aos="zoom-in">
+					<div class="icon">
+						<img src="img/icons/mysql.png" alt="MySQL" class="img-fluid" />
 					</div>
-					<div class="skill">
-						<div class="skill-icon">
-							<img class="img-fluid" src="img/icons/github.png" alt="GITHUB" />
-						</div>
-						<p>Github</p>
+					<p class="text-center mt-2">MySQL</p>
+				</div>
+				<div class="p-2" data-aos="zoom-in">
+					<div class="icon">
+						<img src="img/icons/git.png" alt="Git" class="img-fluid" />
 					</div>
+					<p class="text-center mt-2">Git</p>
+				</div>
+				<div class="p-2" data-aos="zoom-in">
+					<div class="icon">
+						<img src="img/icons/github.png" alt="Github" class="img-fluid" />
+					</div>
+					<p class="text-center mt-2">Github</p>
 				</div>
 			</div>
 		</section>
 
 		<!-- PROJECT SECTION -->
-		<div class="container py-5 proj-section" id="project">
-			<h2 class="text-center fs-2">My <span class="primary">Projects</span></h2>
-
-			<div class="row g-3">
+		<section class="projects container" id="project">
+			<h2 class="text-center mb-4" data-aos="fade-up">My <span class="accent">Projects</span></h2>
+			<div class="row g-2">
 				<div class="col-12 col-md-4">
-					<div class="card">
-						<img src="img/projects/project_1/ss_1.PNG" class="card-img-top" alt="..." />
-						<div class="card-body">
-							<span class="badge text-bg-secondary">html</span>
-							<span class="badge text-bg-secondary">css</span>
-							<span class="badge text-bg-secondary">javascript</span>
-							<span class="badge text-bg-secondary">bootstrap</span>
-							<span class="badge text-bg-secondary">php</span>
-							<span class="badge text-bg-secondary">mysql</span>
-							<span class="badge text-bg-secondary">phpmailer</span>
-							<h3 class="mt-3 text-truncate primary fw-bold" title="Simple Online Movie Booking">Simple Online Movie Booking</h3>
+					<div class="card" data-aos="fade-up">
+						<div class="card-img">
+							<img src="img/projects/project_1/ss_1.PNG" class="card-img-top" alt="..." />
+						</div>
+						<div class="card-body px-2 py-3">
+							<div class="tech-stacks">
+								<span class="badge text-bg-secondary">html</span>
+								<span class="badge text-bg-secondary">css</span>
+								<span class="badge text-bg-secondary">javascript</span>
+								<span class="badge text-bg-secondary">bootstrap</span>
+								<span class="badge text-bg-secondary">php</span>
+								<span class="badge text-bg-secondary">mysql</span>
+							</div>
+							<h3 class="mt-3" title="Simple Online Movie Booking">Simple Online Movie Booking</h3>
 							<div class="d-flex gap-1">
 								<a href="https://github.com/WebDevJerome/movie-booking" target="_blank" class="btn btn-sm btn-primary mt-2"
 									>Source code <i class="ms-1 fa-solid fa-arrow-up-right-from-square"></i
@@ -178,19 +194,21 @@
 				</div>
 
 				<div class="col-12 col-md-4">
-					<div class="card">
-						<img src="img/projects/project_2/ss_4.png" class="card-img-top" alt="..." />
-						<div class="card-body">
-							<span class="badge text-bg-secondary">html</span>
-							<span class="badge text-bg-secondary">css</span>
-							<span class="badge text-bg-secondary">javascript</span>
-							<span class="badge text-bg-secondary">bootstrap</span>
-							<span class="badge text-bg-secondary">jquery</span>
-							<span class="badge text-bg-secondary">php</span>
-							<span class="badge text-bg-secondary">mysql</span>
-							<span class="badge text-bg-secondary">responsive design</span>
-							<span class="badge text-bg-secondary">sms api</span>
-							<h3 class="mt-3 text-truncate primary fw-bold" title="QR-code Based Attendance Monitoring System">QR-code Based Attendance Monitoring System</h3>
+					<div class="card" data-aos="fade-up">
+						<div class="card-img">
+							<img src="img/projects/project_2/ss_4.png" class="card-img-top" alt="..." />
+						</div>
+						<div class="card-body px-2 py-3">
+							<div class="tech-stacks">
+								<span class="badge text-bg-secondary">html</span>
+								<span class="badge text-bg-secondary">css</span>
+								<span class="badge text-bg-secondary">javascript</span>
+								<span class="badge text-bg-secondary">bootstrap</span>
+								<span class="badge text-bg-secondary">jquery</span>
+								<span class="badge text-bg-secondary">php</span>
+								<span class="badge text-bg-secondary">mysql</span>
+							</div>
+							<h3 class="mt-3" title="QR-code Based Attendance Monitoring System">QR-code Based Attendance System</h3>
 							<div class="d-flex gap-1">
 								<a href="https://github.com/WebDevJerome/capstone-project" target="_blank" class="btn btn-sm btn-primary mt-2"
 									>Source code <i class="ms-1 fa-solid fa-arrow-up-right-from-square"></i
@@ -201,17 +219,20 @@
 				</div>
 
 				<div class="col-12 col-md-4">
-					<div class="card">
-						<img src="img/projects/project_3/ss_1.PNG" class="card-img-top" alt="..." />
-						<div class="card-body">
-							<span class="badge text-bg-secondary">html</span>
-							<span class="badge text-bg-secondary">css</span>
-							<span class="badge text-bg-secondary">javascript</span>
-							<span class="badge text-bg-secondary">jquery</span>
-							<span class="badge text-bg-secondary">php</span>
-							<span class="badge text-bg-secondary">mysql</span>
-							<span class="badge text-bg-secondary">responsive design</span>
-							<h3 class="mt-3 text-truncate primary fw-bold" title="E-commerce for Construction Store">E-commerce for Construction Store</h3>
+					<div class="card" data-aos="fade-up">
+						<div class="card-img">
+							<img src="img/projects/project_3/ss_1.PNG" class="card-img-top" alt="..." />
+						</div>
+						<div class="card-body px-2 py-3">
+							<div class="tech-stacks">
+								<span class="badge text-bg-secondary">html</span>
+								<span class="badge text-bg-secondary">css</span>
+								<span class="badge text-bg-secondary">javascript</span>
+								<span class="badge text-bg-secondary">jquery</span>
+								<span class="badge text-bg-secondary">php</span>
+								<span class="badge text-bg-secondary">mysql</span>
+							</div>
+							<h3 class="mt-3" title="E-commerce for Construction Store">E-commerce Web App</h3>
 							<div class="d-flex gap-1">
 								<a href="https://github.com/julieanne16/Construction-Company-Project/tree/main" target="_blank" class="btn btn-sm btn-primary mt-2"
 									>Source code <i class="ms-1 fa-solid fa-arrow-up-right-from-square"></i
@@ -221,7 +242,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
 		<!-- CONTACT SECTION -->
 
@@ -238,73 +259,66 @@
 			</div>
 		</div>
 
-		<div class="container-fluid contact-page" id="contact">
-			<div class="container">
-				<div class="about-title">
-					<h2 class="text-center mt-4 fs-2"><span class="primary">Contact</span> Me</h2>
-					<p>Let's work together on a project. I am always open to discussing new projects and creative ideas.</p>
+		<section class="contact container" id="contact">
+			<h2 class="text-center mb-1" data-aos="fade-up"><span class="accent">Contact</span> Me</h2>
+			<p class="text-center mb-3" data-aos="fade-up">Let's collaborate on a creative project. Open to new ideas!</p>
+			<form class="" id="contact-form" data-aos="fade-up">
+				<div class="mb-2">
+					<input type="text" name="name" placeholder="Your name" required />
 				</div>
-				<form id="contact-form" class="shadow-sm">
-					<div class="form-group">
-						<input type="text" name="name" placeholder="Your name" required />
-					</div>
-					<div class="form-group">
-						<input type="email" name="email" placeholder="Email address" required />
-					</div>
+				<div class="mb-2">
+					<input type="email" name="email" placeholder="Email address" required />
+				</div>
+				<div class="mb-2">
 					<textarea name="message" cols="30" rows="10" placeholder="Enter your message here..." required></textarea>
+				</div>
 
-					<input type="submit" value="Send" id="sendEmail" class="btn btn-primary" />
-				</form>
-			</div>
-		</div>
+				<button type="submit" id="sendEmail" class="btn btn-sm btn-primary w-100">Send message</button>
+			</form>
+		</section>
 
 		<!-- footer section -->
-		<footer>
-			<a class="go-top" href="#home">
-				<i class="fa-solid fa-arrow-up"></i>
-			</a>
-			<div class="footer-top">
-				<div class="container">
-					<span class="navbar-brand">jPopuli</span>
-					<div class="contact-grid">
-						<!-- contact info -->
-						<div class="contact-info">
-							<div class="contact-item">
-								<i class="fas fa-map-marker-alt"></i>
-								<span>Science City of Muñoz, Nueva Ecija</span>
-							</div>
-							<div class="contact-item">
-								<i class="fas fa-phone"></i>
-								<span>+63 995 594 5857</span>
-							</div>
-							<div class="contact-item">
-								<i class="fas fa-envelope"></i>
-								<span>populi.nel@gmail.com</span>
-							</div>
-							<!-- social media -->
-							<div class="media d-flex mt-5 gap-2">
-								<a href="#"><i class="fab fa-facebook-square"></i></a>
-								<a href="https://www.linkedin.com/in/jerome-nel-populi-93987a27b" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-								<a href="https://github.com/WebDevJerome" target="_blank"><i class="fab fa-github-square"></i></a>
-							</div>
+		<footer class="footer">
+			<div class="container py-5">
+				<a class="top-arrow d-flex justify-content-center align-items-center" href="#home">
+					<i class="fa-solid fa-arrow-up"></i>
+				</a>
+				<span class="navbar-brand text-center d-block mx-auto">jPopuli</span>
+
+				<div class="footer-grid">
+					<div class="contacts py-4">
+						<div class="contact-item">
+							<i class="fas fa-map-marker-alt"></i>
+							<span class="text-truncate" title="Science City of Muñoz, Nueva Ecija">Science City of Muñoz, Nueva Ecija</span>
 						</div>
-
-						<ul class="footer-links">
-							<li><a href="#home">Home</a></li>
-							<li><a href="#about">About Me</a></li>
-							<li><a href="#project">Projects</a></li>
-							<li><a href="#contact">Contact</a></li>
-						</ul>
-
-						<div class="credits">
-							Icons made by
-							<a href="https://www.freepik.com" target="_blank" title="Freepik" class="text-decoration-none">Freepik </a>from
-							<a href="https://www.flaticon.com/" target="_blank" title="Flaticon" class="text-decoration-none">www.flaticon.com</a>
+						<div class="contact-item">
+							<i class="fas fa-phone"></i>
+							<span>+63 995 594 5857</span>
+						</div>
+						<div class="contact-item">
+							<i class="fas fa-envelope"></i>
+							<span>populi.nel@gmail.com</span>
 						</div>
 					</div>
-					<br />
-					<small>&copy; Jerome Nel Populi 2023. All rights reserved.</small>
+
+					<ul class="links py-4">
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About Me</a></li>
+						<li><a href="#project">Projects</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+
+					<div class="credits text-center pt-4 pb-0 pb-md-4">
+						Icons made by
+						<a href="https://www.freepik.com" target="_blank" title="Freepik" class="text-decoration-none accent">Freepik </a>from
+						<a href="https://www.flaticon.com/" target="_blank" title="Flaticon" class="text-decoration-none accent">www.flaticon.com</a>
+					</div>
 				</div>
+			</div>
+
+			<div class="copyright py-2 text-center">
+				<small>&copy; Jerome Nel Populi 2023.</small>
+				<small>All rights reserved.</small>
 			</div>
 		</footer>
 
@@ -313,6 +327,8 @@
 
 		<!-- EmailJS -->
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 		<!-- js -->
 		<script src="js/main.js"></script>

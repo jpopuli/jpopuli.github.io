@@ -1,4 +1,6 @@
 (function () {
+	AOS.init();
+
 	emailjs.init('1g3Q8LMTqmiO-J8-y');
 })();
 
